@@ -1,0 +1,6 @@
+Question 1: B
+        As the servce worked normally without networking problems or anything outside the system and appear the 503 error, it is neccessary to check if there is a new change in the config or some infra events to reduce time.
+Question 2: A
+        As the config change cause 200 alerts across multiple services, rolling back the config change to restore the last known good state is the fastest the safest actions to check if the config have any problems in my opinion, especially the service is on the production stage with a large amount of users are using the service.
+Question 3: C
+	As the service degraded from 200ms to 2s response time but no alert was triggered, I will prefer to the options that the SLOs are focus only on the availability(Service is up or down), not focus on the user-facing performance(service is responsing fast or slow).
